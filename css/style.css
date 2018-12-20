@@ -1,0 +1,842 @@
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+body a,
+.btn-agile {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1em;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+/* banner */
+
+/* header */
+
+a.navbar-brand {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #6887ff;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/*-- //header --*/
+
+/* banner */
+
+.banner {
+    background: url(../images/banner.jpg)no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #6887ff, #02b875);
+    background: -webkit-linear-gradient(to right, #6887ff, #02b875);
+    background: -moz-linear-gradient(to right, #6887ff, #02b875);
+    background: -o-linear-gradient(to right, #6887ff, #02b875);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.banner-text {
+    padding: 9vw 0 6vw 20vw;
+}
+
+.slider-info h1 {
+    color: #fff;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.slider-info p {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.btn-agile {
+    color: #fff;
+    background: linear-gradient(to right, #6887ff, #02b875);
+    background: -webkit-linear-gradient(to right, #6887ff, #02b875);
+    background: -moz-linear-gradient(to right, #6887ff, #02b875);
+    background: -o-linear-gradient(to right, #6887ff, #02b875);
+    border: none;
+    border-radius: 0;
+    font-size: 1.1em;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.btn-agile:hover {
+    color: #fff;
+    background: #000;
+}
+
+ul.social-iconsv2 li {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+ul.social-iconsv2 li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul.social-iconsv2 li a i.fab {
+    font-size: 18px;
+    line-height: 38px;
+    width: 30px;
+    height: 37px;
+    color: #000;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+ul.social-iconsv2 li:first-child a {
+    color: #3b5998;
+}
+
+ul.social-iconsv2 li:last-child {
+    color: #287bbc;
+}
+
+/* //banner */
+
+/* about bottom */
+
+.abbot-main {
+    background: #6887ff;
+}
+
+h3.stat-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px #000000;
+}
+
+.abbot-right .card {
+    background: transparent;
+    border: none;
+}
+
+.abbot-right.px-5 p {
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: 0.2px;
+}
+
+/* //about bottom */
+
+/*-- services --*/
+
+#service {
+    background: #fff;
+}
+
+.agileits-services-grids h4 {
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin: 1.5em 0 0;
+}
+
+.agileits-services-grids h6 {
+    padding: 1px;
+    background: #2954a2;
+    width: 33%;
+    margin: 2em auto 0;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+}
+
+.agileits-services-grids:hover h6 {
+    width: 55%;
+    background: #2954a2;
+}
+
+/*-- Effect 1--*/
+
+.agileits-services-grids span,
+.img-agile i {
+    font-size: 3em;
+    color: #000000;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.37);
+    border-radius: 50%;
+}
+
+.agileits-services-grids h4 span {
+    width: 40px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.agileits-services-grids p {
+    padding: 2em 5em;
+}
+
+.services-top {
+    padding: 3em 5em;
+    background: #02b875;
+}
+
+.services-head {
+    margin-top: 7em;
+}
+
+/*-- //services --*/
+
+.agileits-abt-grids span {
+    width: 70px;
+    height: 70px;
+    background: #5aae32;
+    color: #fff;
+    font-size: 2em;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 1em;
+    border: 5px solid #a7df62;
+    border-radius: 50%;
+}
+
+h3.w3ls-title {
+    font-size: 3.2em;
+    color: #482d2e;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h4.w3ls-title {
+    font-size: 2em;
+    color: #000;
+    font-style: italic;
+}
+
+a.abt-agile {
+    color: #482d2e;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding: 0;
+    border-bottom: 1px solid #e6caa2;
+}
+
+.agileits-abt-grids h4 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.section-3 {
+    background: #6887ff;
+    padding: 3em 0;
+}
+
+.agileits-abt-grids h4 {
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+p.about-text-wthree {
+    color: #fff;
+    width: 263px;
+    font-weight: 500;
+}
+
+/* //about */
+
+.img-section4 {
+    position: absolute;
+    left: 300px;
+    top: 206px;
+    z-index: 1;
+}
+
+.section-4 {
+    background: #6887ff;
+    padding: 3em 0em 3em 10em;
+}
+
+p.sec-4 {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* slide */
+
+.slide-wthree {
+    background: #02b875;
+    position: relative;
+    min-height: 300px;
+    margin: 6em 0 10em;
+    padding: 8em 0 0;
+}
+
+.slide-img {
+    position: absolute;
+    left: 18%;
+    top: -132px;
+    z-index: 1;
+    width: 36%;
+}
+
+/* //slide */
+
+.sec-5-right {
+    background: #02b875;
+}
+
+.sec-5-right .card {
+    border: none;
+    background: transparent;
+}
+
+h5.blog-title {
+    margin: 1em 0 0.5em;
+    color: #02b875;
+    font-size: 1.3em;
+}
+
+h2.stat-title.text-white {
+    margin: 1em 0;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.contact-top {
+    background: url(../images/slide.jpg)no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.content-contact-top {
+    padding: 8em;
+}
+
+.contact-top:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(104, 135, 255, 0.79);
+    z-index: -1;
+}
+
+/*--contact--*/
+
+.w3-contact {
+    background: #fff;
+}
+
+.contact-bottom h5,
+.wthree-form-left h5 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.contact-right-w3ls span {
+    background: #02b875;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.fv3-contact h6 {
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.address h5 {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+
+.address p a,
+p.c-txt {
+    color: #777;
+}
+
+.address p a:hover {
+    color: #000;
+}
+
+form.contact-wthree label {
+    width: 30%;
+    line-height: 2.5;
+    color: #000;
+    font-weight: 600;
+}
+
+form.contact-wthree .form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 4px solid #eee;
+}
+
+.contact-top1 h5 {
+    font-size: 2em;
+}
+
+.address h5 {
+    font-size: 1.5em;
+}
+
+/*--//contact--*/
+
+.cpy-right {
+    padding: 1em;
+    background: #6887ff;
+}
+
+.cpy-right p {
+    color: #fff;
+}
+
+.cpy-right p a {
+    color: #fff;
+}
+
+/*-- bottom-to-top --*/
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 3%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/move-top.png) no-repeat 0px 0px;
+}
+
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*-- //bottom-to-top --*/
+
+/* -- Responsive code -- */
+
+@media screen and (max-width: 1920px) {
+    .img-section4 {
+        top: 84px;
+        z-index: 1;
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .img-section4 {
+        top: 176px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .img-section4 {
+        top: 206px;
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .img-section4 {
+        top: 380px;
+    }
+    .slide-img {
+        top: -96px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .img-section4 {
+        top: 408px;
+        left: 243px;
+    }
+    .agileits-services-grids p {
+        padding: 2em 4em;
+    }
+    .services-top {
+        padding: 3em 4em;
+    }
+    .slide-img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .img-section4 {
+        top: 441px;
+    }
+    .services-top {
+        padding: 3em;
+    }
+    .agileits-services-grids p {
+        padding: 2em 3em;
+    }
+    .btn-agile {
+        padding: 10px 35px;
+    }
+    .slide-wthree {
+        margin: 4em 0 5em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    h3.stat-title {
+        font-size: 2.7em;
+    }
+    .img-section4 {
+        top: 624px;
+        left: 189px;
+    }
+    .section-4 {
+        padding: 3em 0em 3em 5em;
+    }
+    .wthree-title.services-head h3 {
+        font-size: 2.5em;
+    }
+    ul.social-iconsv2 li a i.fab {
+        margin-right: 8px;
+    }
+    .slide-img {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .img-section4 {
+        top: 698px;
+    }
+    .img-section4 {
+        top: 686px;
+    }
+    h3.stat-title {
+        font-size: 2.65em;
+    }
+    .img-section4 {
+        top: 634px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img-section4 {
+        top: 642px;
+        left: 195px;
+    }
+    h3.stat-title {
+        font-size: 2.5em;
+    }
+    .content-contact-top {
+        padding: 6em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .img-section4 {
+        position: inherit;
+        top: 0;
+        left: 34%;
+        width: 32%;
+    }
+    .section-4 {
+        padding: 1em;
+    }
+    .section-3 {
+        padding: 3em 1em;
+    }
+    .services-head {
+        margin-top: 0em;
+        margin-bottom: 3em;
+    }
+    .agileits-services-grids span,
+    .img-agile i {
+        font-size: 2.5em;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .services-top {
+        padding: 2em;
+    }
+    .agileits-services-grids p {
+        padding: 2em;
+    }
+    .banner-text {
+        padding: 9vw 0 6vw 8vw;
+    }
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+    .slide-img {
+        width: 47%;
+        top: -75px;
+        left: 15%;
+    }
+    .slide-img {
+        width: 44%;
+        top: 0;
+        left: 0;
+        position: inherit;
+    }
+    .slide-wthree {
+        margin: 6em 0 10em;
+        padding: 3em 0;
+    }
+    .slide-wthree {
+        margin: 0em 0 0em;
+        padding: 1em 0;
+    }
+    .slide-img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content-contact-top {
+        padding: 5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-contact-top {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .wthree-title.services-head h3 {
+        font-size: 2.1em;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .content-contact-top {
+        padding: 2em;
+    }
+    h2.stat-title.text-white {
+        font-size: 1.6em;
+    }
+    h3.stat-title {
+        font-size: 2.1em;
+    }
+    .contact-bottom h5,
+    .wthree-form-left h5 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .img-section4 {
+        left: 30%;
+        width: 40%;
+    }
+    .section-4 {
+        padding: 0 1em;
+    }
+    .slider-info p {
+        font-size: 1em;
+    }
+    .contact-bottom h5,
+    .wthree-form-left h5 {
+        font-size: 1.2em;
+    }
+    .agileits-services-grids span,
+    .img-agile i {
+        width: 65px;
+        height: 65px;
+        line-height: 66px;
+    }
+    .wthree-title.services-head h3 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .agileits-abt-grids h4 {
+        font-size: 1.3em;
+    }
+    h3.stat-title {
+        font-size: 2em;
+    }
+    .services-top,
+    .agileits-services-grids p {
+        padding: 1em;
+    }
+    .btn-agile {
+        padding: 5px 23px;
+        font-size: 1em;
+        letter-spacing: 0px;
+    }
+    h3.stat-title {
+        font-size: 1.85em;
+    }
+    .contact-right-w3ls span {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    h3.stat-title {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .content-contact-top {
+        padding: 1em 0.2em;
+    }
+    h2.stat-title.text-white {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .img-section4 {
+        left: 25%;
+        width: 50%;
+    }
+    a.navbar-brand {
+        font-size: 2.2em;
+    }
+    .fv3-contact p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact-right-w3ls span {
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h3.stat-title {
+        font-size: 1.85em;
+    }
+    .wthree-title.services-head h3 {
+        font-size: 2.05em;
+    }
+    a.navbar-brand {
+        font-size: 2em;
+    }
+    .wthree-title.services-head h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* -- //Responsive code -- */
