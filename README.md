@@ -30,3 +30,15 @@ DELIMITER ;
 Admin Panel Username and Password
 username:admin@gmail.com
 password:sujith123
+
+
+Some Glimps....
+
+![screenshot 56](https://user-images.githubusercontent.com/38497682/52524811-476dc100-2cc7-11e9-9269-acc1bf00997c.png)
+
+
+![screenshot 57](https://user-images.githubusercontent.com/38497682/52524822-610f0880-2cc7-11e9-8ad6-ff56945583d0.png)
+
+
+![screenshot 61](https://user-images.githubusercontent.com/38497682/52524832-80a63100-2cc7-11e9-902a-62b0b52d14a1.png)
+
