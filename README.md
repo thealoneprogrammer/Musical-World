@@ -12,14 +12,14 @@ Code for triggers and procedure are given below.
 
 ****Trigger code****
 
-/*trigger to keep track of user contributions*/
+*trigger to keep track of user contributions*
 ```mysql
 CREATE TRIGGER `IncrementCount` AFTER INSERT ON `upload_albums`
  FOR EACH ROW update user set user.contributions = user.contributions + 1 where new.singer_id = user.user_id
  ```
  ****procedure code****
  
- /*stored procedure to upload songs*/
+ *stored procedure to upload songs*
  ```mysql
  DELIMITER $$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `uploadsongs`(IN `singer_id` INT(11), IN `song_name` VARCHAR(255), IN `song_format` VARCHAR(255), IN `singer_name` VARCHAR(255), IN `song_image` VARCHAR(255), IN `audio_file` VARCHAR(255))
