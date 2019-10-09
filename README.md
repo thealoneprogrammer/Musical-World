@@ -32,7 +32,7 @@ Admin Panel Username and Password
 username:admin@gmail.com
 password:sujith123
 ```
-
+#      Note: do not forget to add your email credentials validate.php file so as to send email notifications
 
 Some Glimps....
 
