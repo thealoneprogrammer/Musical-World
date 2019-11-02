@@ -4,6 +4,8 @@ This project contains admin side as well as user side.
 User has to first register to the portal before uploading songs.
 The account verification mechanism have been included in the project to verify user authentication.
 
+*create database named "musical_world" at back-end and import the code tables.sql file inside databse folder to get access to database*
+
 This is basically my DBMS mini project.
 The site basically includes triggers and procedures.
 So before running the application create a trigger and a procedure at back-end(xampp or wamp any application).
