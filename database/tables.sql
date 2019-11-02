@@ -1,13 +1,10 @@
-
---Database: "musical_world" --
-
 CREATE TABLE `user` (
  `user_id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(255) NOT NULL,
  `mobile_number` varchar(10) NOT NULL,
  `email_address` varchar(255) NOT NULL,
  `password` varchar(255) NOT NULL,
- `activation_code` varchar(255) NOT NULL,
+ `activation_code` varchar(255) NOT NULL DEFAULT '0',
  `confirm_status` int(1) DEFAULT '0',
  `contributions` int(11) NOT NULL DEFAULT '0',
  PRIMARY KEY (`user_id`)
@@ -16,7 +13,7 @@ CREATE TABLE `user` (
 CREATE TABLE `category` (
  `cat_id` int(11) NOT NULL,
  `cat_name` varchar(255) NOT NULL,
- primary key(`cat_id`);
+ primary key(`cat_id`)
 );
 
 CREATE TABLE `kannada_albums` (
