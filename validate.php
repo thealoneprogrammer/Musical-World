@@ -7,15 +7,15 @@
 
 	include('connection.php');
 		
-    $username = mysqli_real_escape_string($conn,$_POST['username']);
-    $mobile_number = mysqli_real_escape_string($conn,$_POST['mobile_number']);
-    $email_address = mysqli_real_escape_string($conn,$_POST['email_address']);
-    $password = mysqli_real_escape_string($conn,$_POST['password']);
-    $confirm_password = mysqli_real_escape_string($conn,$_POST['confirm_password']);
+    $username = mysqli_real_escape_string($conn,trim($_POST['username']));
+    $mobile_number = mysqli_real_escape_string($conn,trim($_POST['mobile_number']));
+    $email_address = mysqli_real_escape_string($conn,trim($_POST['email_address']));
+    $password = mysqli_real_escape_string($conn,trim($_POST['password']));
+    $confirm_password = mysqli_real_escape_string($conn,trim($_POST['confirm_password']));
 		
     if($password == $confirm_password){
         if(preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/",$email_address)){
-            if(preg_match("/^[6-9]\d{9}$/", $mobile_number)){
+            if(preg_match("/^(\+?\d{1,4})?[-.\s]?(\()?(\d{1,3})(?(2)\))[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/", $mobile_number)){
 
                 $sql_email = "SELECT email_address FROM user WHERE email_address='$email_address'";
                 $result_email = mysqli_query($conn,$sql_email);
