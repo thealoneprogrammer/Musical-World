@@ -36,7 +36,7 @@ password:sujith123
 ```
 #  Note: do not forget to add your email credentials validate.php and activate_email.php file so as to send email notifications
 
-## [Download project report here](https://buymeacoffee.com/thealoneprogrammer/e/275489)
+## [Download project report here](https://bit.ly/4cWSiQ9)
 
 
 Some Glimps....
